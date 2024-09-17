@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Delivery</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Delivery</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div *ngIf="latitud !== 0">
+    <h3>Ubicacion Actual</h3>
+    <p>Latitud: {{ latitud }}</p>
+    <p>Longitud: {{ longitud }}</p>
+  </div>
+  <h2 *ngIf="mostrar">Para obtener su ubicacion actual haga click en el boton</h2>
+  <ion-button *ngIf="mostrar" (click)="obtenerUbicacion()" shape="round">
+    <ion-icon slot="start" name="location"></ion-icon>
+    Ubicacion
+  </ion-button>
+
+  <!-- <a [href]="lugar" *ngIf="lugar !== ''" target="_blank">
+    <ion-button shape="round">
+      <ion-icon slot="icon-only" name="pin"></ion-icon>
+    </ion-button>
+  </a> -->
+ <h3 *ngIf="mostrar2">Indique con el marcador rojo su ubicacion exacta</h3>
+ <h4 *ngIf="mostrar2">Y hacer click para seleccionar</h4>
+
+  <capacitor-google-map #mapa></capacitor-google-map>
+</ion-content>
