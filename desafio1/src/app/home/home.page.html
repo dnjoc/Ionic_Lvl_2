@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+    <ion-img slot="start" class="imagen"
+  src="https://app.cadif1.com/img/template/logo-cadi-blanco.svg"
+  alt="logo Cadi"></ion-img>
+</ion-button>
+</ion-buttons>
+<ion-buttons slot="end">
+  <ion-button routerLink="/login">
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </ion-button>
+
+  <ion-button routerLink="/registro">
+    <ion-icon name="document-text-outline"></ion-icon>
+  </ion-button>
+</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Desafio 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <h1>Datos de las versiones usadas</h1>
+    <p>Android Studio version: Iguana</p>
+    <p>JDK version: 20.0.1</p>
+    <p>Gradle version: 8.2.1</p>
+    <p>Angular version: 17.3.6</p>
+    <p>Ionic version: 7.2.0</p>
+  </div>
+</ion-content>

@@ -1,0 +1,16 @@
+.imagen{
+  width: 90px !important;
+  height: 70px !important;
+}
+ion-header{
+  ion-toolbar{
+    --background: #00548F;
+    ion-buttons{
+      ion-button{
+        ion-icon{
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button>
+    <ion-img slot="start" class="imagen"
+  src="https://app.cadif1.com/img/template/logo-cadi-blanco.svg"
+  alt="logo Cadi"></ion-img>
+</ion-button>
+</ion-buttons>
+<ion-buttons slot="end">
+  <ion-button routerLink="/home">
+    <ion-icon name="home-outline"></ion-icon>
+  </ion-button>
+
+  <ion-button routerLink="/registro">
+    <ion-icon name="document-text-outline"></ion-icon>
+  </ion-button>
+</ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input label="Usuario:" placeholder="Ingresa tu usuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Contraseña:" type="password" placeholder="Ingresa tu contraseña"></ion-input>
+      </ion-item>
+
+      <ion-button style="padding-left: 10px;" [disabled]="true">Ingresar</ion-button>
+
+    </ion-list>
+  </ion-list>
+</ion-content>
